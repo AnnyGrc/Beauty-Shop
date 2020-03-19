@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="navbar-brand " href="@Url.Action("Index", "Home")"> Lakme </a>
+            </li>
+            <li><a href="@Url.Action("About", "Home")">О нас</a></li>
+            <li class="dropdown dropdown-hover">
+                <a class="dropdown-toggle">Товары</a>
+                <ul class="dropdown-menu">
+                    <li><a href="@Url.Action("DliaSalonov", "Home")">Для салонов</a></li>
+                    <li><a href="@Url.Action("Uhod", "Home")">Уход за волосами</a></li>
+                    <li><a href="@Url.Action("Lecenie", "Home")">Лечение</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li><a href="@Url.Action("Index", "Login")"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="@Url.Action("SignUp", "Home")"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        </ul>
+    </div>
+</div>

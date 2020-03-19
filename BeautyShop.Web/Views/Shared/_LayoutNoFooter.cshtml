@@ -1,0 +1,32 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lakme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Styles.Render("~/bundles/bootstrap/css")
+    @Styles.Render("~/bundles/main/css")
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="0" style="background-color: #778899">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        @Html.Partial("_Navbar")
+    </nav>
+
+    <div class="container text-right">
+        @RenderBody()
+    </div><br>
+
+
+</body>
+
+@Scripts.Render("~/bundles/jquery/js")
+@Scripts.Render("~/bundles/bootstrap/js")
+@Scripts.Render("~/bundles/main/js")
+
+@RenderSection("scripts", false)
+</html>

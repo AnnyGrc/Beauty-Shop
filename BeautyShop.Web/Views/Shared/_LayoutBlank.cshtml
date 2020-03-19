@@ -1,0 +1,27 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lakme</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Styles.Render("~/bundles/bootstrap/css")
+    @Styles.Render("~/bundles/main/css")
+
+
+</head>
+
+<body class="content_center center-block" data-spy="scroll" data-target=".navbar" data-offset="0" style="background-color: #778899">
+    <div class="container">
+        @RenderBody()
+    </div><br>
+ 
+</body>
+
+@Scripts.Render("~/bundles/jquery/js")
+@Scripts.Render("~/bundles/bootstrap/js")
+@Scripts.Render("~/bundles/main/js")
+
+@RenderSection("scripts", false)
+</html>
